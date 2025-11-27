@@ -44,6 +44,7 @@ struct PersonDetail:View {
     }
 }
 
+
 #Preview {
     ForEachAndList()
 }

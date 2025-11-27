@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        TextFieldAddNew()
+        Searchable()
 //        VStack {
 //            Image(systemName: "globe")
 //                .imageScale(.large)
