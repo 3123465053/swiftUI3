@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+// focused 里要求传入Hashable 这种，所以要实现这种协议
 enum Login:Hashable{
     case username
     case password
@@ -28,7 +29,7 @@ struct Focused: View {
                 .padding()
                 .focused($focusState,equals: .password)
             
-            //哪个为空 就将焦点对焦到哪个输入框
+            //点击的时候哪个为空 就将焦点对焦到哪个输入框
             Button("登录"){
                 if username.isEmpty{
                     focusState = .username

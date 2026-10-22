@@ -28,7 +28,7 @@ struct TextAddNew2: View {
             Text(names,format: .list(type: .and))
             
             //重量
-            Text(weight,format: .measurement(width: .wide))
+            Text(weight,format: .measurement(width: .narrow))
         }
     }
 }
